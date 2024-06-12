@@ -2,12 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. Make sure to have Flask. If Flask doesn't exist, install flask first \
-2. Install all python dependencies that is not available \
-3. For the website, frontend is built with ReactJS with TailwindCSS, API is created with Flask to connect with Python scripts \
+1. Make sure to have Flask. If Flask doesn't exist, install flask first 
+2. Install all python dependencies that is not available 
+3. For the website, frontend is built with ReactJS with TailwindCSS, API is created with Flask to connect with Python scripts 
 4. To run the website: \
-   a. First, run the api.py with python api.py\
-   b. Run the react file with npm start \
+   a. First, run the api.py with python api.py \
+   b. Run the react file with npm start 
 
 ## Available Scripts
 
