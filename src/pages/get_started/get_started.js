@@ -13,6 +13,9 @@ function GetStarted() {
   const handleImageUpload = (originalUrl, filteredUrl) => {
     setImageUrl(originalUrl);
     setFilteredUrl(filteredUrl);
+    if (originalUrl) {
+      console.log(originalUrl);
+    }
   };
 
   const handleFilterChange = (filter) => {
@@ -22,6 +25,7 @@ function GetStarted() {
 
   const filterImage = (imageUrl, filter) => {
     if (imageUrl) {
+      console.log("testing!");
       setLoading(true); // Set loading to true when request starts
       fetch(`http://localhost:5000/filter`, {
         method: "POST",
