@@ -55,13 +55,12 @@ function GetStarted() {
   // const [selected, setSelected] = useState("cartoon");
 
   return (
-    <div className="pt-[4rem]">
-      <div className="w-full h-1/2 grid place-items-center p-10">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Choose a filter</span>
-        </div>
-        <Filter onFilterChange={handleFilterChange} />
+
+    <div className="w-full h-1/2 grid place-items-center p-10">
+      <div className="w-full grid place-items-center pb-5">
+        <span className="font-bold text-2xl">Choose a filter</span>
       </div>
+      <Filter onFilterChange={handleFilterChange} />
       <div className="w-full h-1/2 grid place-items-center p-10 pt-0">
         <div className="w-full grid place-items-center pb-5">
           <span className="font-bold text-2xl">Upload Image</span>
@@ -85,7 +84,7 @@ function GetStarted() {
         </div>
         <DownloadImage imageUrl={filteredUrl} />
       </div>
-    </div>
+    </div >
   );
 }
 
