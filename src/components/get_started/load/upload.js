@@ -1,8 +1,9 @@
-import React, {useState} from "react";
-import Upload from "./upload.png";
+import React, { useState } from "react";
+// import Upload from "./upload.png";
+import { IconUpload } from "@tabler/icons-react"
 
 const UploadImage = ({ onImageUpload }) => {
-    const [image, setImage] = useState(null);
+  const [image, setImage] = useState(null);
   // const handleImageUpload = (event) => {
   //   console.log("uploading");
   //   const file = event.target.files[0];
@@ -59,7 +60,8 @@ const UploadImage = ({ onImageUpload }) => {
         className="hidden"
         id="imageUpload"
       />
-      <img src={Upload} alt="upload" className="w-full h-full" />
+      <IconUpload color="black" size={48} />
+
     </div>
   );
 };
