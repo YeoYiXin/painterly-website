@@ -8,8 +8,11 @@ import About from "../../components/Home/about/about";
 
 function HomePage({ onStartButtonClick, onGalleryButtonClick, onDocumentationButtonClick, onContactButtonClick }) {
   return (
-    <div className="w-screen h-[90%]">
-      <div className="pt-16 w-full h-[20rem] bg-[#89b6b7]">
+    <div className="w-screen h-[90%]"
+      style={{
+        backgroundImage: 'linear-gradient(to right, #c9fff8, #FFFF, #dac5ed)'
+      }}>
+      <div className="pt-16 w-full h-[20rem] bg-[#FFFF]">
         <Frame />
       </div>
       <div className="w-full h-3/5 px-10 py-5">
@@ -18,7 +21,7 @@ function HomePage({ onStartButtonClick, onGalleryButtonClick, onDocumentationBut
       <div className="flex w-full h-2/5 px-10 py-5 pt-10 items-center justify-center">
         <StartButton onClick={onStartButtonClick} />
       </div>
-      <div className="w-full h-3/5 px-10 py-5">
+      <div className="w-full h-3/5 px-10 py-20">
         <div className="w-full grid place-items-center pb-5">
           <span className="font-bold text-2xl">MORE ART BY PAINTERLY</span>
         </div>
