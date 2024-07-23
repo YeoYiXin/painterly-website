@@ -56,36 +56,70 @@ function GetStarted() {
 
   return (
 
-    <div className="w-full h-1/2 grid place-items-center p-10">
-      <div className="w-full grid place-items-center pb-5">
-        <span className="font-bold text-2xl">Choose a filter</span>
-      </div>
-      <Filter onFilterChange={handleFilterChange} />
-      <div className="w-full h-1/2 grid place-items-center p-10 pt-0">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Upload Image</span>
+    <div className="flex-row space-x-6"
+      style={{
+        backgroundImage: 'linear-gradient(to right, #c5ede8, #fcedf4, #dac5ed)'
+      }}>
+      <div className='flex flex-col p-28'>
+        <div className='flex flex-row items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold text-2xl items-center justify-center align-middle">Choose a filter</div>
+          </div>
+          <div className="flex pb-10 pt-0">
+            <Filter onFilterChange={handleFilterChange} />
+          </div>
         </div>
-        <UploadImage onImageUpload={handleImageUpload} />
-      </div>
-      <div className="w-full h-1/2 grid place-items-center p-10 pt-0">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Output</span>
+        <div className='flex flex-row items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold text-2xl items-center justify-center align-middle">Upload Image</div>
+          </div>
+          <div className="flex pb-10 pt-0">
+            <UploadImage onImageUpload={handleImageUpload} />
+          </div>
         </div>
-        {/* <Output imageUrl={imageUrl} /> */}
-        {loading ? (
-          <div>Loading...</div> // Show loading indicator while loading
-        ) : (
-          <Output imageUrl={filteredUrl} />
-        )}
-      </div>
-      <div className="w-full h-1/2 grid place-items-center p-10 pt-0">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Download Image</span>
+        {/* <div className='flex flex-row items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold text-2xl items-center justify-center align-middle">Output</div>
+          </div>
+          <div className="pb-10 pt-0">
+            <div className="cursor-pointer w-[50vw] h-[10rem] grid place-content-center p-5 rounded-xl border-[#171955] border-4">
+              placeholder
+            </div>
+          </div>
+        </div> */}
+        <div className='flex flex-row items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold text-2xl items-center justify-center align-middle">Output</div>
+          </div>
+          <div className="pb-10 pt-0 ">
+            {/* <Output imageUrl={imageUrl} /> */}
+            {loading ? (
+              <div>Loading...</div> // Show loading indicator while loading
+            ) : (
+              <Output imageUrl={filteredUrl} />
+            )}
+          </div>
         </div>
-        <DownloadImage imageUrl={filteredUrl} />
+        <div className='flex flex-row items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold text-2xl items-center justify-center align-middle">Download Image</div>
+          </div>
+          <div className="pb-10 pt-0">
+            <DownloadImage imageUrl={filteredUrl} />
+          </div>
+        </div>
       </div>
     </div >
   );
 }
 
 export default GetStarted;
+{/* 
+          <div className="w-1/2 h-1/2 flex  p-10 pt-0">
+            <Output imageUrl={imageUrl} />
+            {loading ? (
+              <div>Loading...</div> // Show loading indicator while loading
+            ) : (
+              <Output imageUrl={filteredUrl} />
+            )}
+          </div> */}
