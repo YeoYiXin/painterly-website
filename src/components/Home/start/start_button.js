@@ -6,7 +6,7 @@ const StartButton = ({ onClick }) => {
       className="flex items-center justify-center cursor-pointer border-2 border-black w-[30vw] h-[20vh] rounded-3xl"
       onClick={onClick}
     >
-      <p className="cursor-pointer text-xl">Get Started</p>
+      <p className="cursor-pointer lg:text-xl md:text-md sm:text-sm text-sm">Get Started</p>
     </div >
   );
 };

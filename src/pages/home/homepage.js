@@ -12,7 +12,7 @@ function HomePage({ onStartButtonClick, onGalleryButtonClick, onDocumentationBut
       style={{
         backgroundImage: 'linear-gradient(to right, #c9fff8, #FFFF, #dac5ed)'
       }}>
-      <div className="pt-16 w-full h-[20rem] bg-[#FFFF]">
+      <div className="pt-2 w-full lg:h-[30vh] md:h-[30vh] sm:h-[20vh] bg-[#FFFF]">
         <Frame />
       </div>
       <div className="w-full h-3/5 px-10 py-5">
