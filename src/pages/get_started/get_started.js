@@ -60,18 +60,18 @@ function GetStarted() {
       style={{
         backgroundImage: 'linear-gradient(to right, #c5ede8, #fcedf4, #dac5ed)'
       }}>
-      <div className='flex flex-col p-28'>
-        <div className='flex flex-row items-center w-[80vw]'>
+      <div className='flex flex-col lg:p-28 md:p-20 sm:p-5 p-10'>
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold text-2xl items-center justify-center align-middle">Choose a filter</div>
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Choose a filter</div>
           </div>
           <div className="flex pb-10 pt-0">
             <Filter onFilterChange={handleFilterChange} />
           </div>
         </div>
-        <div className='flex flex-row items-center w-[80vw]'>
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold text-2xl items-center justify-center align-middle">Upload Image</div>
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Upload Image</div>
           </div>
           <div className="flex pb-10 pt-0">
             <UploadImage onImageUpload={handleImageUpload} />
@@ -79,7 +79,7 @@ function GetStarted() {
         </div>
         {/* <div className='flex flex-row items-center w-[80vw]'>
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold text-2xl items-center justify-center align-middle">Output</div>
+            <div className="flex font-bold lg:text-2xl md:text-lg sm:text-md items-center justify-center align-middle">Output</div>
           </div>
           <div className="pb-10 pt-0">
             <div className="cursor-pointer w-[50vw] h-[10rem] grid place-content-center p-5 rounded-xl border-[#171955] border-4">
@@ -87,9 +87,9 @@ function GetStarted() {
             </div>
           </div>
         </div> */}
-        <div className='flex flex-row items-center w-[80vw]'>
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold text-2xl items-center justify-center align-middle">Output</div>
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Output</div>
           </div>
           <div className="pb-10 pt-0 ">
             {/* <Output imageUrl={imageUrl} /> */}
@@ -100,9 +100,9 @@ function GetStarted() {
             )}
           </div>
         </div>
-        <div className='flex flex-row items-center w-[80vw]'>
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold text-2xl items-center justify-center align-middle">Download Image</div>
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Download Image</div>
           </div>
           <div className="pb-10 pt-0">
             <DownloadImage imageUrl={filteredUrl} />
