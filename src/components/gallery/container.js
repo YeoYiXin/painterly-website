@@ -24,7 +24,7 @@ const GalleryContainer = ({ data }) => {
         </div>
 
         <div className="grid place-items-center pb-2">
-          <h2 className="text-md md:text-xl">{author}</h2>
+          <h2 className="lg:text-xl md:text-md sm:text-sm text-xs">{author}</h2>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ const GalleryContainer = ({ data }) => {
 
         <div className="grid place-items-center">
           <div>
-            <h2 className="text-xl">{author}</h2>
+            <h2 className="lg:text-xl md:text-md sm:text-sm text-xs">{author}</h2>
           </div>
         </div>
       </Details>
