@@ -19,7 +19,7 @@ const NavBar = ({ selected, onSectionClicked }) => {
     <div className="flex items-center py-0  w-screen h-16 z-50 bg-[#e6f9fb]">
       <div className="flex justify-between lg:w-[100vw] md:w-[120vw] sm:w-[130w] w-[140vw] ml-16">
         <NavBarLogo onClick={onSectionClicked} />
-        <div className="md:hidden sm:hidden lg:flex hidden gap-32 w-[70vw]">
+        <div className="md:hidden sm:hidden lg:flex hidden gap-32 w-[70vw] align-middle items-center">
           <NavBarHome selected={selected} onClick={onSectionClicked} />
           <NavBarGetStarted selected={selected} onClick={onSectionClicked} />
           <NavBarGallery selected={selected} onClick={onSectionClicked} />
