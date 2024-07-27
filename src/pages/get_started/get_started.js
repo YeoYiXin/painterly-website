@@ -55,10 +55,9 @@ function GetStarted() {
   // const [selected, setSelected] = useState("cartoon");
 
   return (
-
     <div className="flex-row space-x-6"
       style={{
-        backgroundImage: 'linear-gradient(to right, #c5ede8, #fcedf4, #dac5ed)'
+        backgroundImage: 'linear-gradient(20deg, #c5ede8, #c9dde0,  #ffff)'
       }}>
       <div className='flex flex-col lg:p-28 md:p-20 sm:p-5 p-10'>
         <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>

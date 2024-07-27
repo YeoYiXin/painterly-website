@@ -10,7 +10,7 @@ function HomePage({ onStartButtonClick, onGalleryButtonClick, onDocumentationBut
   return (
     <div className="w-screen h-[90%]"
       style={{
-        backgroundImage: 'linear-gradient(to right, #c9fff8, #FFFF, #dac5ed)'
+        backgroundImage: 'linear-gradient(90deg, #c5ede8,  #ffff, #c9dde0)'
       }}>
       <div className="pt-2 w-full lg:h-[30vh] md:h-[30vh] sm:h-[20vh] bg-[#FFFF]">
         <Frame />
