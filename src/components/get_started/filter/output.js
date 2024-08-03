@@ -13,7 +13,7 @@ const Output = ({ imageUrl }) => {
   }, [imageUrl]);
 
   return (
-    <div className="border w-full h-full overflow-hidden grid place-content-center p-2">
+    <div className="cursor-pointer w-[50vw] h-full grid place-content-center p-3 rounded-xl border-[#171955] border-4 overflow-hidden">
       {imageUrl ? (
         <img
           src={imageUrl}

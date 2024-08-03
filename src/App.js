@@ -7,6 +7,7 @@ import HomePage from "./pages/home/homepage";
 import GetStarted from "./pages/get_started/get_started";
 import Gallery from "./pages/gallery/gallery";
 import Footer from "./components/footer/footer";
+import Contact from "./components/contact";
 
 function App() {
   const [selected, setSelected] = useState("home");
@@ -38,6 +39,11 @@ function App() {
       {selected.toLowerCase() === "gallery" && (
         <div className="relative z-0">
           <Gallery />
+        </div>
+      )}
+      {selected.toLowerCase() === "contact" && (
+        <div className="relative z-0">
+          <Contact />
         </div>
       )}
 

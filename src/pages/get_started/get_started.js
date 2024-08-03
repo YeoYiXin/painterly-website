@@ -13,6 +13,9 @@ function GetStarted() {
   const handleImageUpload = (originalUrl, filteredUrl) => {
     setImageUrl(originalUrl);
     setFilteredUrl(filteredUrl);
+    if (originalUrl) {
+      console.log(originalUrl);
+    }
   };
 
   const handleFilterChange = (filter) => {
@@ -22,6 +25,7 @@ function GetStarted() {
 
   const filterImage = (imageUrl, filter) => {
     if (imageUrl) {
+      console.log("testing!");
       setLoading(true); // Set loading to true when request starts
       fetch(`http://localhost:5000/filter`, {
         method: "POST",
@@ -51,38 +55,70 @@ function GetStarted() {
   // const [selected, setSelected] = useState("cartoon");
 
   return (
-    <div className="pt-[4rem]">
-      <div className="w-full h-1/2 grid place-items-center p-10">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Choose a filter</span>
+    <div className="flex-row space-x-6"
+      style={{
+        backgroundImage: 'linear-gradient(20deg, #c5ede8, #c9dde0,  #ffff)'
+      }}>
+      <div className='flex flex-col lg:p-28 md:p-20 sm:p-5 p-10'>
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Choose a filter</div>
+          </div>
+          <div className="flex pb-10 pt-0">
+            <Filter onFilterChange={handleFilterChange} />
+          </div>
         </div>
-        <Filter onFilterChange={handleFilterChange} />
-      </div>
-      <div className="w-full h-1/2 grid place-items-center p-10 pt-0">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Upload Image</span>
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Upload Image</div>
+          </div>
+          <div className="flex pb-10 pt-0">
+            <UploadImage onImageUpload={handleImageUpload} />
+          </div>
         </div>
-        <UploadImage onImageUpload={handleImageUpload} />
-      </div>
-      <div className="w-full h-1/2 grid place-items-center p-10 pt-0">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Output</span>
+        {/* <div className='flex flex-row items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold lg:text-2xl md:text-lg sm:text-md items-center justify-center align-middle">Output</div>
+          </div>
+          <div className="pb-10 pt-0">
+            <div className="cursor-pointer w-[50vw] h-[10rem] grid place-content-center p-5 rounded-xl border-[#171955] border-4">
+              placeholder
+            </div>
+          </div>
+        </div> */}
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Output</div>
+          </div>
+          <div className="pb-10 pt-0 ">
+            {/* <Output imageUrl={imageUrl} /> */}
+            {loading ? (
+              <div>Loading...</div> // Show loading indicator while loading
+            ) : (
+              <Output imageUrl={filteredUrl} />
+            )}
+          </div>
         </div>
-        {/* <Output imageUrl={imageUrl} /> */}
-        {loading ? (
-          <div>Loading...</div> // Show loading indicator while loading
-        ) : (
-          <Output imageUrl={filteredUrl} />
-        )}
-      </div>
-      <div className="w-full h-1/2 grid place-items-center p-10 pt-0">
-        <div className="w-full grid place-items-center pb-5">
-          <span className="font-bold text-2xl">Download Image</span>
+        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
+          <div className="w-1/2 justify-center items-center align-middle">
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Download Image</div>
+          </div>
+          <div className="pb-10 pt-0">
+            <DownloadImage imageUrl={filteredUrl} />
+          </div>
         </div>
-        <DownloadImage imageUrl={filteredUrl} />
       </div>
-    </div>
+    </div >
   );
 }
 
 export default GetStarted;
+{/* 
+          <div className="w-1/2 h-1/2 flex  p-10 pt-0">
+            <Output imageUrl={imageUrl} />
+            {loading ? (
+              <div>Loading...</div> // Show loading indicator while loading
+            ) : (
+              <Output imageUrl={filteredUrl} />
+            )}
+          </div> */}

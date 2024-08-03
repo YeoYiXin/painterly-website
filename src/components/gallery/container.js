@@ -16,15 +16,15 @@ const GalleryContainer = ({ data }) => {
   return (
     <div className="w-full h-full grid place-items-center mb-2">
       <div
-        className="w-[80%] h-[90%] m-4 p-2 cursor-pointer place-items-center"
+        className=" w-[80%] h-[90%] m-4 p-2 cursor-pointer place-items-center"
         onClick={handleImageClick}
       >
         <div className="w-full h-full">
           <img src={image} alt={author} className="w-full h-full object-cover" />
         </div>
 
-        <div className="grid place-items-center pb-2">
-          <h2 className="text-md md:text-xl">{author}</h2>
+        <div className="grid place-items-center pt-2 pb-2">
+          <h2 className="lg:text-xl md:text-md sm:text-sm text-sm font-bold text-[#446665]">{author}</h2>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ const GalleryContainer = ({ data }) => {
 
         <div className="grid place-items-center">
           <div>
-            <h2 className="text-xl">{author}</h2>
+            <h2 className="lg:text-xl md:text-md sm:text-sm text-sm font-bold">{author}</h2>
           </div>
         </div>
       </Details>
