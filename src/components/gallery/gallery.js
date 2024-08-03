@@ -5,72 +5,47 @@ const GallerySection = () => {
         {
             id: 1,
             author: "John Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/cat.png",
         },
         {
             id: 2,
             author: "Jane Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/dog.png",
         },
         {
             id: 3,
             author: "Jane Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/flower.png",
         },
         {
             id: 4,
             author: "Jane Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/lya.png",
         },
         {
             id: 5,
             author: "Jane Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/msia_pride.png",
         },
         {
             id: 6,
             author: "Jane Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/scenery.png",
         },
         {
             id: 7,
             author: "Jane Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/sloth.png",
         },
         {
             id: 8,
             author: "John Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/ts.png",
         },
         {
             id: 9,
             author: "John Doe",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            id: 10,
-            author: "John Doe",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            id: 11,
-            author: "John Doe",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            id: 12,
-            author: "John Doe",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            id: 13,
-            author: "John Doe",
-            image: "https://via.placeholder.com/150",
-        },
-        {
-            id: 14,
-            author: "John Doe",
-            image: "https://via.placeholder.com/150",
+            image: "/gallery/wed.png",
         },
     ];
 
