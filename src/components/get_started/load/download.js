@@ -18,7 +18,6 @@ const DownloadImage = ({ imageUrl }) => {
   return (
     <div className="cursor-pointer w-[50vw] h-[10rem] grid place-content-center p-5 rounded-xl border-[#171955] border-4" onClick={handleImageDownload}>
       <IconDownload color="black" size={48} />
-
     </div>
   );
 };
