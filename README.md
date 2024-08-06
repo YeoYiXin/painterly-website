@@ -1,6 +1,6 @@
 # Painterly website
 Tech Stacks: React.js, Python \
-Available filters: Cartoon, Watercolour, Impressionism Filters \
+Available filters: Cartoon, Watercolour, Impressionism Filters 
 
 # Getting Started with Create React App
 
