@@ -7,12 +7,10 @@ import HomePage from "./pages/home/homepage";
 import GetStarted from "./pages/get_started/get_started";
 import Gallery from "./pages/gallery/gallery";
 import Footer from "./components/footer/footer";
-import Contact from "./components/contact";
+import Contact from "./pages/contact/contact";
 
 function App() {
   const [selected, setSelected] = useState("home");
-  // let focused = false;
-
   const handleSelect = (page) => {
     setSelected(page);
   };
@@ -46,7 +44,6 @@ function App() {
           <Contact />
         </div>
       )}
-
       <div className="overflow-x-hidden w-full h-[10%]">
         <Footer />
       </div>

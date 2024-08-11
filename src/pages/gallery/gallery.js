@@ -2,7 +2,7 @@ import GallerySection from "../../components/gallery/gallery";
 
 const Gallery = () => {
   return (
-    <div className="pt-[4rem]">
+    <div className="">
       <GallerySection />
     </div>
   );

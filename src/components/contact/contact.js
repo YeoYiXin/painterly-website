@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Center } from "@mantine/core";
 import { IconPhone, IconMail, IconUserCircle } from "@tabler/icons-react";
 
@@ -39,7 +38,7 @@ const Contact = ({}) => {
             Through this project, Yi Xin honed her skills in creating
             maintainable, well-structured websites and deepened her knowledge in
             image processing. Additionally, collaborating with Erin has enhanced
-            her communication skills and time management abilities.
+            her communication skills and time management abilities
           </div>
         </div>
         <div className="flex-col border-[rgb(255,255,255)] bg-[rgb(114,137,143)] border-8 p-6 rounded-xl justify-center text-center">

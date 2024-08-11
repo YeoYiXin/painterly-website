@@ -42,7 +42,7 @@ function GetStarted() {
           if ("filteredUrl" in data) {
             console.log(data.filteredUrl);
             setFilteredUrl(data.filteredUrl);
-            console.log("success")
+            console.log("success");
           }
         })
         .catch((error) => {
@@ -52,46 +52,41 @@ function GetStarted() {
     }
   };
 
-  // const [selected, setSelected] = useState("cartoon");
-
   return (
-    <div className="flex-row space-x-6"
+    <div
+      className="flex-row space-x-6"
       style={{
-        backgroundImage: 'linear-gradient(20deg, #c5ede8, #c9dde0,  #ffff)'
-      }}>
-      <div className='flex flex-col lg:p-28 md:p-20 sm:p-5 p-10'>
-        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
+        backgroundImage: "linear-gradient(20deg, #c5ede8, #c9dde0,  #ffff)",
+      }}
+    >
+      <div className="flex flex-col lg:p-28 md:p-20 sm:p-5 p-10">
+        <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]">
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Choose a filter</div>
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">
+              Choose a filter
+            </div>
           </div>
           <div className="flex pb-10 pt-0">
             <Filter onFilterChange={handleFilterChange} />
           </div>
         </div>
-        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
+        <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]">
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Upload Image</div>
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">
+              Upload Image
+            </div>
           </div>
           <div className="flex pb-10 pt-0">
             <UploadImage onImageUpload={handleImageUpload} />
           </div>
         </div>
-        {/* <div className='flex flex-row items-center w-[80vw]'>
+        <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]">
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold lg:text-2xl md:text-lg sm:text-md items-center justify-center align-middle">Output</div>
-          </div>
-          <div className="pb-10 pt-0">
-            <div className="cursor-pointer w-[50vw] h-[10rem] grid place-content-center p-5 rounded-xl border-[#171955] border-4">
-              placeholder
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">
+              Output
             </div>
           </div>
-        </div> */}
-        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
-          <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Output</div>
-          </div>
           <div className="pb-10 pt-0 ">
-            {/* <Output imageUrl={imageUrl} /> */}
             {loading ? (
               <div>Loading...</div> // Show loading indicator while loading
             ) : (
@@ -99,26 +94,19 @@ function GetStarted() {
             )}
           </div>
         </div>
-        <div className='flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]'>
+        <div className="flex flex-col lg:flex-row md:flex-col sm:flex-col items-center w-[80vw]">
           <div className="w-1/2 justify-center items-center align-middle">
-            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">Download Image</div>
+            <div className="flex font-bold lg:text-xl md:text-lg sm:text-md items-center justify-center align-middle">
+              Download Image
+            </div>
           </div>
           <div className="pb-10 pt-0">
             <DownloadImage imageUrl={filteredUrl} />
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 
 export default GetStarted;
-{/* 
-          <div className="w-1/2 h-1/2 flex  p-10 pt-0">
-            <Output imageUrl={imageUrl} />
-            {loading ? (
-              <div>Loading...</div> // Show loading indicator while loading
-            ) : (
-              <Output imageUrl={filteredUrl} />
-            )}
-          </div> */}
