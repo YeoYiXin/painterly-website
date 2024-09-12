@@ -4,47 +4,47 @@ const GallerySection = () => {
     const examples = [
         {
             id: 1,
-            author: "John Doe",
+            author: "User 1",
             image: "/gallery/cat.png",
         },
         {
             id: 2,
-            author: "Jane Doe",
+            author: "User 2",
             image: "/gallery/dog.png",
         },
         {
             id: 3,
-            author: "Jane Doe",
+            author: "User 3",
             image: "/gallery/flower.png",
         },
         {
             id: 4,
-            author: "Jane Doe",
+            author: "User 4",
             image: "/gallery/lya.png",
         },
         {
             id: 5,
-            author: "Jane Doe",
+            author: "User 5",
             image: "/gallery/msia_pride.png",
         },
         {
             id: 6,
-            author: "Jane Doe",
+            author: "User 6",
             image: "/gallery/scenery.png",
         },
         {
             id: 7,
-            author: "Jane Doe",
+            author: "User 7",
             image: "/gallery/sloth.png",
         },
         {
             id: 8,
-            author: "John Doe",
+            author: "User 8",
             image: "/gallery/ts.png",
         },
         {
             id: 9,
-            author: "John Doe",
+            author: "User 9",
             image: "/gallery/wed.png",
         },
     ];
